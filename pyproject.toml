@@ -1,0 +1,58 @@
+[project]
+name = "omnixys-cache"
+dynamic = ["version"]
+description = "Omnixys shared cache package (Redis/Valkey client, serialization, invalidation)"
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.14"
+dependencies = [
+  "redis>=5.4.0",
+]
+
+authors = [
+  {name = "Omnixys Team", email = "team@omnixys.com"},
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/omnixys_cache/__init__.py"
+
+[tool.ruff]
+line-length = 120
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = [
+  "ANN101", "ANN401", "S101",
+  "T20", "FBT", "D", "INP001",
+]
+"src/**" = [
+  "D", "ANN401", "ARG002", "S104", "S105",
+]
+"src/omnixys_cache/client.py" = [
+  "PLR0913",
+]
+"src/omnixys_cache/invalidation.py" = [
+  "ASYNC109", "TC002",
+]
+"src/omnixys_cache/container.py" = [
+  "TC001",
+]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+
+[dependency-groups]
+dev = [
+    "dishka>=1.10.1",
+    "mypy>=2.3.0",
+    "ruff>=0.15.21",
+    "pytest>=9.1.0",
+    "pytest-asyncio>=0.26.0",
+]
