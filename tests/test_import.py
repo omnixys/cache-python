@@ -9,7 +9,7 @@ from importlib.metadata import version as pkg_version
 def test_package_importable() -> None:
     mod = importlib.import_module("omnixys_cache")
     assert hasattr(mod, "__version__")
-    assert mod.__version__ == pkg_version("cache")
+    assert mod.__version__ == pkg_version("omnixys-cache")
 
 
 def test_public_api() -> None:
