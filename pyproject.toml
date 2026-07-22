@@ -1,5 +1,5 @@
 [project]
-name = "cache"
+name = "omnixys-cache"
 dynamic = ["version"]
 description = "Omnixys shared cache package (Redis/Valkey client, serialization, invalidation)"
 readme = "README.md"
