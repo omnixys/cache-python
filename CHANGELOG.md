@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/omnixys/cache-python/compare/v2.0.2...v2.0.3) (2026-07-22)
+
+
+### Bug Fixes
+
+* **publish:** add uv build before uv publish ([9dc9a9e](https://github.com/omnixys/cache-python/commit/9dc9a9e9564d785e34e43e53a873d49e66517892))
+
 ## [2.0.2](https://github.com/omnixys/cache-python/compare/v2.0.1...v2.0.2) (2026-07-22)
 
 
