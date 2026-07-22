@@ -4,8 +4,8 @@ from typing import Any
 
 from redis.asyncio import Redis
 
-from omnixys_cache.model import CacheKeyDefinition, CacheSerializer
-from omnixys_cache.serializer import JsonCacheSerializer
+from cache.model import CacheKeyDefinition, CacheSerializer
+from cache.serializer import JsonCacheSerializer
 
 
 class CacheClient:

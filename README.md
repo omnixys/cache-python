@@ -18,7 +18,7 @@ pip install omnixys-cache
 ## Usage
 
 ```python
-from omnixys_cache import CacheClient, CacheInvalidationService, JsonCacheSerializer
+from cache import CacheClient, CacheInvalidationService, JsonCacheSerializer
 ```
 
 ## License

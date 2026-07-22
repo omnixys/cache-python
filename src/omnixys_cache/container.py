@@ -3,9 +3,9 @@ from __future__ import annotations
 from dishka import Provider, Scope, provide
 from redis.asyncio import Redis
 
-from omnixys_cache.client import CacheClient
-from omnixys_cache.invalidation import CacheInvalidationService
-from omnixys_cache.serializer import JsonCacheSerializer
+from cache.client import CacheClient
+from cache.invalidation import CacheInvalidationService
+from cache.serializer import JsonCacheSerializer
 
 
 class CacheProvider(Provider):
