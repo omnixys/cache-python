@@ -1,3 +1,10 @@
+## [2.0.6](https://github.com/omnixys/cache-python/compare/v2.0.5...v2.0.6) (2026-07-22)
+
+
+### Bug Fixes
+
+* **publish:** publish package ([8daa532](https://github.com/omnixys/cache-python/commit/8daa532335c1b7dc842b64475c8877c853af4daa))
+
 ## [2.0.5](https://github.com/omnixys/cache-python/compare/v2.0.4...v2.0.5) (2026-07-22)
 
 
