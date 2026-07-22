@@ -5,6 +5,7 @@ from cache.serializer import JsonCacheSerializer, StrictJsonCacheSerializer
 
 __version__ = "3.0.0"
 
+
 __all__ = [
     "CacheClient",
     "CacheInvalidationService",
