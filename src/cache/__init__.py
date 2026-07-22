@@ -3,7 +3,7 @@ from cache.invalidation import CacheInvalidationService
 from cache.model import CacheKeyDefinition, CacheSerializer
 from cache.serializer import JsonCacheSerializer, StrictJsonCacheSerializer
 
-__version__ = "2.0.7"
+__version__ = "3.0.0"
 
 __all__ = [
     "CacheClient",
