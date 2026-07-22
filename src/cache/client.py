@@ -13,10 +13,12 @@ class CacheClient:
         self,
         url: str,
         key_prefix: str = "",
+        password: str | None = None,
         serializer: CacheSerializer | None = None,
     ) -> None:
         self._client = Redis.from_url(
             url,
+            password=password or None,
             decode_responses=True,
             health_check_interval=30,
         )
