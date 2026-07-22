@@ -68,7 +68,7 @@ jobs:
           OUTPUT=$(npx semantic-release --no-ci 2>&1 || true)
           echo "$OUTPUT"
 
-          if echo "$OUTPUT" | grep -q "published"; then
+          if echo "$OUTPUT" | grep -q "Published"; then
             echo "released=true" >> $GITHUB_OUTPUT
           else
             echo "released=false" >> $GITHUB_OUTPUT
