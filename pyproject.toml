@@ -2,15 +2,25 @@
 name = "omnixys-cache"
 dynamic = ["version"]
 description = "Omnixys shared cache package (Redis/Valkey client, serialization, invalidation)"
+readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
 requires-python = ">=3.14"
+authors = [{ name = "Omnixys Team", email = "team@omnixys.com" }]
+keywords = ["omnixys", "cache", "redis", "valkey", "serialization"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3.14",
+    "Typing :: Typed",
+]
 dependencies = [
-  "redis>=5.4.0",
+    "redis>=5.4.0",
 ]
 
-authors = [
-  {name = "Omnixys Team", email = "team@omnixys.com"},
-]
+[project.urls]
+Homepage = "https://github.com/omnixys/omnixys"
+Repository = "https://github.com/omnixys/omnixys"
 
 [build-system]
 requires = ["hatchling"]
@@ -18,6 +28,18 @@ build-backend = "hatchling.build"
 
 [tool.hatch.version]
 path = "src/omnixys_cache/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/omnixys_cache"]
+
+[dependency-groups]
+dev = [
+    "dishka>=1.10.1",
+    "mypy>=2.3.0",
+    "ruff>=0.15.21",
+    "pytest>=9.1.0",
+    "pytest-asyncio>=0.26.0",
+]
 
 [tool.ruff]
 line-length = 120
@@ -28,20 +50,20 @@ select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = [
-  "ANN101", "ANN401", "S101",
-  "T20", "FBT", "D", "INP001",
+    "ANN101", "ANN401", "S101",
+    "T20", "FBT", "D", "INP001",
 ]
 "src/**" = [
-  "D", "ANN401", "ARG002", "S104", "S105",
+    "D", "ANN401", "ARG002", "S104", "S105",
 ]
 "src/omnixys_cache/client.py" = [
-  "PLR0913",
+    "PLR0913",
 ]
 "src/omnixys_cache/invalidation.py" = [
-  "ASYNC109", "TC002",
+    "ASYNC109", "TC002",
 ]
 "src/omnixys_cache/container.py" = [
-  "TC001",
+    "TC001",
 ]
 
 [tool.mypy]
@@ -52,12 +74,3 @@ ignore_missing_imports = true
 asyncio_mode = "auto"
 testpaths = ["tests"]
 pythonpath = ["src"]
-
-[dependency-groups]
-dev = [
-    "dishka>=1.10.1",
-    "mypy>=2.3.0",
-    "ruff>=0.15.21",
-    "pytest>=9.1.0",
-    "pytest-asyncio>=0.26.0",
-]
