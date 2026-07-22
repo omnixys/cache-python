@@ -1,3 +1,10 @@
+# [3.0.0](https://github.com/omnixys/cache-python/compare/v2.0.7...v3.0.0) (2026-07-22)
+
+
+### Features
+
+* **cache:** accept password param and fix version ([ed9ebee](https://github.com/omnixys/cache-python/commit/ed9ebee41454bd0873518ca3cde5058c3b48d7fe))
+
 # [4.0.0](https://github.com/omnixys/cache-python/compare/v3.0.0...v4.0.0) (2026-07-22)
 
 # [3.0.0](https://github.com/omnixys/cache-python/compare/v2.0.7...v3.0.0) (2026-07-22)
