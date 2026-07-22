@@ -3,7 +3,7 @@ from omnixys_cache.invalidation import CacheInvalidationService
 from omnixys_cache.model import CacheKeyDefinition, CacheSerializer
 from omnixys_cache.serializer import JsonCacheSerializer, StrictJsonCacheSerializer
 
-__version__ = "2.0.6"
+__version__ = "2.0.7"
 
 __all__ = [
     "CacheClient",
