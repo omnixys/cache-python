@@ -1,3 +1,5 @@
+# [4.0.0](https://github.com/omnixys/cache-python/compare/v3.0.0...v4.0.0) (2026-07-22)
+
 # [3.0.0](https://github.com/omnixys/cache-python/compare/v2.0.7...v3.0.0) (2026-07-22)
 
 ## [2.0.7](https://github.com/omnixys/cache-python/compare/v2.0.6...v2.0.7) (2026-07-22)
