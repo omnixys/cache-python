@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/omnixys/cache-python/compare/v3.0.3...v3.0.4) (2026-07-23)
+
+
+### Bug Fixes
+
+* **ci:** comment out PyPI publish job ([8d3ba58](https://github.com/omnixys/cache-python/commit/8d3ba58f37a3af0a318560b1418282663e5e83d5))
+
 ## [3.0.3](https://github.com/omnixys/cache-python/compare/v3.0.2...v3.0.3) (2026-07-23)
 
 
