@@ -11,17 +11,23 @@ from cache.serializer import JsonCacheSerializer
 class CacheClient:
     def __init__(
         self,
-        url: str,
+        url: str | None = None,
         key_prefix: str = "",
         password: str | None = None,
         serializer: CacheSerializer | None = None,
+        client: Redis | None = None,
     ) -> None:
-        self._client = Redis.from_url(
-            url,
-            password=password or None,
-            decode_responses=True,
-            health_check_interval=30,
-        )
+        if client is not None:
+            self._client = client
+        else:
+            if url is None:
+                raise ValueError("Either 'url' or 'client' must be provided")
+            self._client = Redis.from_url(
+                url,
+                password=password or None,
+                decode_responses=True,
+                health_check_interval=30,
+            )
         self._prefix = key_prefix
         self._serializer = serializer or JsonCacheSerializer()
 
@@ -105,6 +111,16 @@ class CacheClient:
         key_str = self._resolve(key, *parts)
         ttl = self._resolve_ttl(key, ttl_seconds)
         result = await self._client.set(key_str, value, ex=ttl, nx=True)
+        return result is not None
+
+    @property
+    def raw(self) -> Redis:
+        """The underlying redis.asyncio client for advanced low-level access."""
+        return self._client
+
+    async def set_nx_px(self, key: str, value: str, ttl_ms: int) -> bool:
+        """Atomically set a raw key only if absent, expiring in milliseconds."""
+        result = await self._client.set(key, value, nx=True, px=ttl_ms)
         return result is not None
 
     def _resolve(self, key: str | CacheKeyDefinition, *parts: str) -> str:
