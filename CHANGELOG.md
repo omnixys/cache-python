@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/omnixys/cache-python/compare/v3.0.4...v3.0.5) (2026-08-22)
+
+
+### Bug Fixes
+
+* **dir:** remove target dir ([af03a53](https://github.com/omnixys/cache-python/commit/af03a535ea102faa403e691fd2894ccad85fecb0))
+
 ## [3.0.4](https://github.com/omnixys/cache-python/compare/v3.0.3...v3.0.4) (2026-07-23)
 
 
