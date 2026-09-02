@@ -1,6 +1,6 @@
 [project]
 name = "omnixys-cache"
-dynamic = ["version"]
+version = "3.0.5"
 description = "Omnixys shared cache package (Redis/Valkey client, serialization, invalidation)"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
@@ -26,8 +26,6 @@ Repository = "https://github.com/omnixys/omnixys"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.hatch.version]
-path = "src/cache/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/cache"]

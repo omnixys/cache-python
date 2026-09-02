@@ -17,7 +17,6 @@ from cache.rate_limit import RateLimiter, RateLimitResult
 from cache.serializer import JsonCacheSerializer, StrictJsonCacheSerializer
 from cache.stream import StreamMessage, ValkeyStreamService
 
-__version__ = "3.0.5"
 
 __all__ = [
     "CacheClient",
