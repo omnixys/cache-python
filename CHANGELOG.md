@@ -1,3 +1,27 @@
+# 🧾 Changelog
+
+All notable changes in this project will be documented in this file.
+
+
+## [3.0.6](https://github.com/omnixys/cache-python/compare/v3.0.5...v3.0.6) (2026-09-02)
+
+### Ci
+
+* **Ci:** add setup-uv to release job for uv lock in prepare cmd ([](https://github.com/omnixys/cache-python/commit/7b95de67da9e4be83a2615ac55dede75f243f4df))
+* **Ci:** bundle semantic-release tool install to fix conventional-changelog-writer ([](https://github.com/omnixys/cache-python/commit/c24c7beedcd62216d0ca14ebf4221d420e1b80e9))
+* **Ci:** pin conventional-changelog-conventionalcommits to v9 for release-notes-generator compat ([](https://github.com/omnixys/cache-python/commit/5857d612df6588615cff46850d7e73ae3af09e2a))
+* **Ci:** publish tagged release to PyPI ([](https://github.com/omnixys/cache-python/commit/289bd133fd53c7d2351ab9f7f960dcaa62e8ebaf))
+* **Ci:** remove stray comma from releaseBodyTemplate ([](https://github.com/omnixys/cache-python/commit/d888d0422a6fd0fcd3a4ee203d5cba00790fe29a))
+
+### Other
+
+* **Other:** Merge pull request #1 from omnixys/migration/uuid-v7 ([](https://github.com/omnixys/cache-python/commit/54e5a91c59f5ebabb34618c079ef7c3d467ca329)), closes [#1](https://github.com/omnixys/cache-python/issues/1)
+
+### Packaging
+
+* **Packaging:** fix ruff lint and version metadata tests ([](https://github.com/omnixys/cache-python/commit/0624f51035c7d508aed99654db612e1a06ae9889))
+* **Packaging:** move package version to pyproject.toml and align release workflow ([](https://github.com/omnixys/cache-python/commit/1e80fd05df1f06a4c16995b7569eaec3d0021374))
+
 ## [3.0.5](https://github.com/omnixys/cache-python/compare/v3.0.4...v3.0.5) (2026-08-22)
 
 
