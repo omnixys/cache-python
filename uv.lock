@@ -164,6 +164,7 @@ wheels = [
 
 [[package]]
 name = "omnixys-cache"
+version = "3.0.5"
 source = { editable = "." }
 dependencies = [
     { name = "redis" },
