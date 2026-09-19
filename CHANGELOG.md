@@ -3,6 +3,17 @@
 All notable changes in this project will be documented in this file.
 
 
+## [3.0.7](https://github.com/omnixys/cache-python/compare/v3.0.6...v3.0.7) (2026-09-19)
+
+### Deps
+
+* **Deps:** update omnixys deps ([](https://github.com/omnixys/cache-python/commit/db23b574cdcd56f2f54a3a3913715d507b9f80b7))
+
+### Other
+
+* **Other:** Merge branch 'main' of https://github.com/omnixys/cache-python ([](https://github.com/omnixys/cache-python/commit/9a6e05d72af5da595b1b1787928b0c1dfba0b5a2))
+* **Other:** Update ci.yaml ([](https://github.com/omnixys/cache-python/commit/4cfbd6bc879fec194591a19ae3afcba25be75b14))
+
 ## [3.0.6](https://github.com/omnixys/cache-python/compare/v3.0.5...v3.0.6) (2026-09-02)
 
 ### Ci

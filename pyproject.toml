@@ -1,6 +1,6 @@
 [project]
 name = "omnixys-cache"
-version = "3.0.6"
+version = "3.0.7"
 description = "Omnixys shared cache package (Redis/Valkey client, serialization, invalidation)"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
